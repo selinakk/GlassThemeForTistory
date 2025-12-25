@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="90px" height="90px" viewBox="0 0 90 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>img</title>
+    <g id="04_etc" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="04.404페이지" transform="translate(-915.000000, -411.000000)">
+            <g id="Group" transform="translate(820.000000, 411.000000)">
+                <g id="img" transform="translate(95.000000, 0.000000)">
+                    <circle id="circle" stroke="#EFEFEF" stroke-width="4" fill="#FFFFFF" cx="45" cy="45" r="43"></circle>
+                    <path d="M46,60 C46.5522847,60 47,60.4477153 47,61 L47,63 C47,63.5522847 46.5522847,64 46,64 L44,64 C43.4477153,64 43,63.5522847 43,63 L43,61 C43,60.4477153 43.4477153,60 44,60 L46,60 Z M46.9661113,26 C47.518396,26 47.9661113,26.4477153 47.9661113,27 C47.9661113,27.0111073 47.9659262,27.0222137 47.9655562,27.0333148 L47.0322228,55.0333148 C47.0142556,55.572332 46.5720945,56 46.0327779,56 L43.9672221,56 C43.4279055,56 42.9857444,55.572332 42.9677772,55.0333148 L42.0344438,27.0333148 C42.0160446,26.4813366 42.4485957,26.0189544 43.0005739,26.0005551 L46.9661113,26 Z" id="Combined-Shape" fill="#DDDDDD"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
