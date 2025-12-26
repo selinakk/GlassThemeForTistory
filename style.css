@@ -20,6 +20,8 @@
 }
 
 /* Global */
+html {box-sizing: border-box;}
+
 html, body {
   position: relative;
   height: 100%;
@@ -27,7 +29,6 @@ html, body {
   -webkit-text-size-adjust: 100%;
 }
 
-* {box-sizing: border-box;}
 *,
 *::before,
 *::after {box-sizing: inherit;}
@@ -1658,7 +1659,7 @@ summary {
 /* area-cover */
 .area-cover {
   width: 100%;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 .area-cover:last-of-type {margin-bottom: 0;}
 

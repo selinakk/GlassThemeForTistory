@@ -4,7 +4,7 @@
 		<name>글래스 테마</name>
 		<version>1.0</version>
 		<description>
-			<![CDATA[ Glassmorphism 테마의 반응형 스킨입니다. iOS 26의 Liquid Glass UI를 표방하였습니다. ]]>
+			<![CDATA[ Glassmorphism 테마 반응형 스킨입니다. iOS 26의 Liquid Glass UI를 표방하였습니다. ]]>
 		</description>
 		<license>
 			<![CDATA[ Odyssey 스킨에서 리뉴얼하였습니다. 글래스 테마는 자유롭게 수정이 가능합니다. ]]>
@@ -23,9 +23,9 @@
 		<tagsInCloud>10</tagsInCloud>
 		<sortInCloud>3</sortInCloud>
 		<expandComment>0</expandComment>
-		<lengthOfRecentNotice>35</lengthOfRecentNotice>
+		<lengthOfRecentNotice>25</lengthOfRecentNotice>
 		<lengthOfRecentEntry>27</lengthOfRecentEntry>
-		<lengthOfRecentComment>40</lengthOfRecentComment>
+		<lengthOfRecentComment>30</lengthOfRecentComment>
 		<lengthOfLink>30</lengthOfLink>
 		<commentMessage>
 			<none>0</none>
@@ -33,7 +33,7 @@
 		</commentMessage>
 		<contentWidth>880</contentWidth>
 		<entriesOnPage>8</entriesOnPage>
-		<entriesOnList>8</entriesOnList>
+		<entriesOnList>5</entriesOnList>
 		<showListOnCategory>1</showListOnCategory>
 		<showListOnHome>1</showListOnHome>
 		<showListLock>1</showListLock>
@@ -45,11 +45,11 @@
 			<value>thumbnail</value>
 		</item>
 		<item>
-			<label>이미지 크기 고정 타입</label>
+			<label>이미지 크기 고정 갤러리(PC 3단, 모바일 2단)</label>
 			<value>crop</value>
 		</item>
 		<item>
-			<label>이미지 비율 유지 타입</label>
+			<label>이미지 크기 고정 갤러리(PC 2단, 모바일 1단)</label>
 			<value>resize</value>
 		</item>
 		<item>
@@ -73,7 +73,7 @@
 			<variable>
 				<name>sidebartype</name>
 				<label>사이드바 형태</label>
-				<description></description>
+				<description>본 테마는 2단 우측 사이드바 레이아웃에 최적화되어 있습니다</description>
 				<type>SELECT</type>
 				<option>
 					<![CDATA[
@@ -264,14 +264,6 @@
 				<default></default>
 			</variable>
 			<variable>
-				<name>Profilefacebooklink</name>
-				<label>페이스북 바로가기 URL</label>
-				<description></description>
-				<type>STRING</type>
-				<option></option>
-				<default></default>
-			</variable>
-			<variable>
 				<name>Profileyoutubelink</name>
 				<label>유튜브 바로가기 URL</label>
 				<description></description>
@@ -289,14 +281,20 @@
 			</variable>
 			<variable>
 				<name>Profiletwitterlink</name>
-				<label>트위터 바로가기 URL</label>
+				<label>X 바로가기 URL</label>
 				<description></description>
 				<type>STRING</type>
 				<option></option>
 				<default></default>
 			</variable>
-		</variablegroup>
-
+			<variable>
+				<name>Profilefacebooklink</name>
+				<label>페이스북 바로가기 URL</label>
+				<description></description>
+				<type>STRING</type>
+				<option></option>
+				<default></default>
+			</variable>
 
 		<variablegroup name="사이드바 - SNS">
 			<variable>
@@ -398,21 +396,22 @@
 		<item>
 			<name>crop</name>
 			<label>
-				<![CDATA[ 이미지 크기 고정 타입 ]]>
+				<![CDATA[ 이미지 크기 고정 갤러리(PC 3단, 모바일 2단) ]]>
 			</label>
 			<description>
-				<![CDATA[ 이미지를 일정 크기로 크롭하고, 제목과 본문으로 글 정보를 구성합니다.
-				4개 이상의 글을 포함할 경우엔 '더보기' 버튼이 나타납니다.]]>
+				<![CDATA[썸네일이 모두 동일한 비율로 출력되며
+				갤러리 레이아웃은 기본이 3단, 해상도 가로 760px 이하에서는 2단입니다.]]>
 			</description>
 		</item>
 		<item>
 			<name>resize</name>
 			<label>
-				<![CDATA[ 이미지 비율 유지 타입 ]]>
+				<![CDATA[ 이미지 비율 유지 갤러리(PC 2단, 모바일 1단) ]]>
 			</label>
 			<description>
-				<![CDATA[ 이미지의 비율을 유지하고, 제목과 본문으로 글 정보를 구성합니다.
-				4개 이상의 글을 포함할 경우엔 '더보기' 버튼이 나타납니다.]]>
+				<![CDATA[ 썸네일이 이미지의 기존 비율대로 출력됩니다.
+				다만, 썸네일 비율이 자유분방한 경우 레이아웃을 맞추기 위해 텍스트 하단에 여백이 생깁니다.
+				갤러리 레이아웃은 기본이 2단, 해상도 가로 576px 이에서는 1단입니다.]]>
 			</description>
 		</item>
 		<item>
@@ -421,8 +420,7 @@
 				<![CDATA[ 포스터 타입 ]]>
 			</label>
 			<description>
-				<![CDATA[ 세로 포스텨 형태로 글 정보를 구성합니다.
-				'콘텐츠-최신 글' 사용시, more 버튼으로 글 목록 이동이 가능합니다. ]]>
+				<![CDATA[ 세로 포스터 비율 썸네일을 가진 글 목록이며 가로 스크롤이 가능합니다.]]>
 			</description>
 		</item>
 		<item>
@@ -431,7 +429,7 @@
 				<![CDATA[ 단순 텍스트 타입 ]]>
 			</label>
 			<description>
-				<![CDATA[ 이미지와 본문 없이, 단순히 제목만으로 글 정보를 구성합니다. ]]>
+				<![CDATA[ 썸네일 이미지 없이 제목 및 본문 3줄을 출력합니다.]]>
 			</description>
 		</item>
 	</cover>
