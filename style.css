@@ -672,7 +672,7 @@ summary {
   .wrap-right .header .t_menu_guestbook,
   .wrap-right .header .t_menu_tag,
   .wrap-right .header .t_menu_link_1,
-  .wrap-right .header .t_menu_category {padding: 1rem 0 1rem 0;}
+  .wrap-right .header .t_menu_category {padding: .5rem 0 .5rem 0;}
 
   .wrap-drawer .header .tt_category .category_list .sub_category_list {top: 49px;}
 
@@ -683,6 +683,11 @@ summary {
   #tt-body-guestbook.headerslogundisplayon .wrap-right .sub_category_list {top: 263px;}
 
   #tt-body-page .wrap-right .sub_category_list {top: 103px;}
+
+  .header .area-gnb {
+    position: relative;
+    top: 1.5rem;
+  }
 
   .header .tt_category .category_list>li:hover>a::after,
   .header .topnavmenu>ul>li:hover>a::after {
@@ -2948,8 +2953,6 @@ summary {
   color: #333333;
 }
 
-#article-view a {color: #0070d1;}
-
 #article-view a,
 #article-view figure[data-ke-type='contentSearch'] a {text-decoration: none;}
 
@@ -4160,7 +4163,7 @@ hr[data-ke-style='style8'],
 
   .header .inner-header {
     max-width: initial;
-    padding-top: 35px;
+    padding-top: 2rem;
   }
 
   .header .title-logo {
@@ -4547,8 +4550,6 @@ hr[data-ke-style='style8'],
   .header .line-bottom {display: none;}
 
   .header .area-gnb {margin-top: 0px;}
-
-  .header .area-gnb .topnavmenu {border-bottom: 1px solid #e7e7e8;}
 
   .header .area-slogun {
     padding-top: 0px;
