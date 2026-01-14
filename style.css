@@ -389,14 +389,16 @@ summary {
 
 .area-paging .link_page {
   position: relative;
-  top: 3px;
+  top: 3.6px;
   display: inline-block;
   transition: transform 300ms;
 }
 .area-paging .link_page:hover {transform: scale(1.2);}
 
-.area-paging .link_page.link_prev {transform: rotateY(-180deg);}
+.area-paging .link_page.link_prev {transform: rotateY(-180deg) translateY(0.2px);}
 .area-paging .link_page.link_prev:hover {transform: scale(1.2) rotateY(-180deg);}
+
+.area-paging .link_page > img {height: 1.5rem;}
 
 .area-paging .paging_num {
   display: inline-block;
